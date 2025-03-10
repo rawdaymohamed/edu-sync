@@ -135,7 +135,7 @@ const menuItems: MenuSection[] = [
 
 const Menu: React.FC = () => {
   return (
-    <ul className="space-y-5 text-md">
+    <ul className="space-y-5 text-md text-gray-500">
       {menuItems.map((menuItem) => (
         <li key={menuItem.title} className="space-y-2">
           <div className="font-light text-sm hidden lg:block ">
@@ -144,13 +144,13 @@ const Menu: React.FC = () => {
 
           <ul className="space-y-4">
             {menuItem.items.map((item) => {
-              const IconComponent = item.icon; // Get the icon component
+              const IconComponent = item.icon;
 
               return (
                 <li key={item.label}>
                   <Link
                     href={item.href}
-                    className="flex gap-2 items-center justify-center lg:justify-start text-gray-600"
+                    className="flex gap-2 items-center justify-center lg:justify-start"
                   >
                     {IconComponent && (
                       <IconComponent className="menu-icon text-xl size-5" />
