@@ -23,7 +23,9 @@ export default function RootLayout({
         <Menu />
       </div>
       {/* Right */}
-      <div className="w-[85%] md:w-[92%] lg:w-[84%] xl:w-[88%]">{children}</div>
+      <div className="w-[85%] md:w-[92%] lg:w-[84%] xl:w-[88%] bg-[#f7f8fa] overflow-scroll">
+        {children}
+      </div>
     </div>
   );
 }
