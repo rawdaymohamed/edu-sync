@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import Menu from "../components/Menu";
 import { IoMdSchool } from "react-icons/io";
+import Navbar from "../components/Navbar";
 
 export default function RootLayout({
   children,
@@ -24,6 +25,7 @@ export default function RootLayout({
       </div>
       {/* Right */}
       <div className="w-[85%] md:w-[92%] lg:w-[84%] xl:w-[88%] bg-[#f7f8fa] overflow-scroll">
+        <Navbar />
         {children}
       </div>
     </div>
