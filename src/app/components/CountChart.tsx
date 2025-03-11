@@ -1,12 +1,7 @@
 "use client";
 import React from "react";
 import { MdMoreHoriz } from "react-icons/md";
-import {
-  RadialBarChart,
-  RadialBar,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { RadialBarChart, RadialBar, ResponsiveContainer } from "recharts";
 
 const data = [
   {
