@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import { FaSchool } from "react-icons/fa6";
 export default function RootLayout({
@@ -21,7 +22,10 @@ export default function RootLayout({
         <Menu />
       </div>
       {/* Right */}
-      <div className="w-[86%] md:w-[91%] lg:w-[84%] xl:w-[86%] h-full overflow-y-scroll">{children}</div>
+      <div className="w-[86%] md:w-[91%] lg:w-[84%] xl:w-[86%] h-full overflow-y-scroll bg-[#f7f8fa]">
+        <Navbar />
+        {children}
+      </div>
     </div>
   );
 }
